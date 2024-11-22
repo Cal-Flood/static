@@ -1,0 +1,187 @@
+input.textEntryName, select.textEntryCardExp, select.textEntryName {
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 12px !important;
+    height: 35px;
+}
+
+.submitButton {
+    background: #374463;
+    color: white;
+    border: 1px solid #374463;
+    transition: 0.3s;
+    font-size: 16px !important;
+    border-radius: 4px !important;
+    padding: 6px 12px;
+    text-decoration: none;
+    height: 42px !important;
+}
+.submitButton:hover {
+    color: #374463 !important;
+    background-color: white !important;
+    border: 1px solid #374463;
+    font-size: 16px !important;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+input.textEntryName, select.textEntryName {
+    width: 100% !important;
+}
+select.textEntryCardExp {
+    width: 47% !important;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+tr table {
+    height: 100%;
+    border: none !important;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    padding-top: 0!important;
+    background: white;
+    background-color: white!important;
+}
+
+
+td.label:has(>table) {
+    /*border-radius: 8px;*/
+    /*border: 1px solid #D0D5DD !important;*/
+    /*padding: 8px 16px;*/
+    font-weight: 500;
+    font-size: 12px !important;
+    max-width: 200px;
+    /*width: 196px;*/
+    /*height: 63px;*/
+
+}
+
+td.label > table > tbody >tr {
+    /*width: 100%;*/
+    /*padding-left: 16px;*/
+    /*padding-top: 8px;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+}
+
+td.label:has(>table) td{
+    width: 100%;
+    font-size: 12px !important;
+    padding-right: 0px !important;
+}
+
+#flex_fee_val {
+    /*margin-left: 5px;*/
+}
+
+.amountInclude {
+    padding-top: 0 !important;
+    background-color: white !important;
+}
+
+tr:has(>.amountInclude) {
+    /*width: 100px;*/
+
+}
+
+tr table tbody{
+    gap: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    padding: 24px 5px;
+    padding-top: 24px !important;
+    border: 1px solid #D0D5DD !important;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    /*width: 783px;*/
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    /*display: grid;*/
+    /*grid-template-columns: 29% 29% 29%;*/
+    gap: 0px;
+    /*height: 500px;*/
+    flex-wrap: nowrap;
+    column-gap: 44px;
+    /*width: 690px;*/
+    height: 94%;
+}
+
+/*@media (min-width: 800px) {*/
+/*    height: 400px;*/
+/*}*/
+
+
+tr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    /*width: 200px;*/
+    /*min-height: 43px;*/
+}
+
+td {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+tr:has(> td > img) {
+    height: 45px;
+}
+
+table:has(>#flex_fee) tr {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 83%;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    background-color: rgba(239, 239, 239, 0.3);
+}
+
+table:has(>#flex_fee) td {
+    background-color: rgba(239, 239, 239, 0.3) !important;
+}
+
+td:has(>#hp_baddr2):before {
+    content: "Address Line 2";
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    display: block;
+    font-family: verdana, sans-serif;
+}
+
+div:has(>#hp_cvv) {
+    position: relative;
+}
+
+.toggle-hp_cvv {
+    position: absolute;
+    top: 20%;
+    right: 4px;
+}
+
+tr[height="10"] {
+    display: none;
+}
