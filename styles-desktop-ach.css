@@ -17,6 +17,7 @@ input.textEntryName, select.textEntryCardExp, select.textEntryName {
     padding: 6px 12px;
     text-decoration: none;
     height: 42px !important;
+    margin-top:20px;
 }
 .submitButton:hover {
     color: #374463 !important;
@@ -192,4 +193,9 @@ div:has(>#hp_cvv) {
 
 tr[height="10"] {
     display: none;
+}
+
+#tntForm>div>table>tbody>tr:nth-last-of-type(2) {
+    position: absolute;
+    bottom: -30px;
 }
